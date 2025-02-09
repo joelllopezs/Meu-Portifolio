@@ -1,2 +1,1 @@
-# Meu-Portifolio
- Fix correções da section technologies em telas menores
+# joelllopeszs.github.io
