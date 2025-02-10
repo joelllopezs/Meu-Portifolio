@@ -534,6 +534,53 @@ footer p {
 
 /* Responsividade */
 
+/*Add @Media 300px - 399px para correção da sobreposição do section.technologies sobre o main*/
+
+@media (min-width: 300px) and (max-width: 399px) {
+  main {
+    margin-bottom: 20px;
+  }
+  section.technologies {
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+
+  .technologies {
+    margin-top: 0; /* Remove a sobreposição */
+    padding-top: 0.9rem; /* Ajusta o espaço superior */
+  }
+
+  .technologies__list {
+   
+    justify-content: center;
+    margin-bottom: 30px; /* Ajusta o espaçamento inferior */
+  }
+
+  h2.subtitle {
+    font-size:20px;
+    margin: 0px;
+  }
+
+  ul.technologies__list {
+    margin: 0px 
+  }
+
+  li.technologies__item {
+    width: 2.5rem;
+    height: 2.5rem;
+    
+
+  }
+  img.technologies__logo {
+    height: 1.5rem;
+    width: 1.5rem;
+    
+  }
+
+}
+
 /*ADD @MEDIA 400px - 767px para correção da sobreposição do section.technologies sobre o main*/
 
 @media (min-width: 400px) and (max-width: 767px) {
@@ -626,10 +673,19 @@ footer p {
   }
 
   .technologies {
-    padding: 6.25rem 6rem 2rem 6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 6.25rem 6rem 6.25rem 6rem;
     margin-top: 6rem;
   }
 
+  ul.technologies__list {
+    margin: 0;
+  }
+ h2.subtitle {
+    font-size: 1.5rem;
+    margin: 1px;
+  }
   footer {
     margin: 0;
   }
@@ -688,15 +744,19 @@ footer p {
     width: auto;
   }
 
-  .technologies {
+  .technologies { 
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 10rem 6rem 4rem;
+    padding: 6rem 6rem 6rem;
   }
 
   .technologies h2 {
+  
     font-size: 3rem;
     width: 55%;
+    margin: 0;
   }
 
   .technologies__list {
